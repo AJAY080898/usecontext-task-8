@@ -1,0 +1,129 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center; 
+  padding: 250px; 
+}
+
+.product {
+  flex: 0 1 calc(25% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ddd; 
+  border-radius: 6px; 
+  padding: 20px;
+  background-color: #fff; 
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.02);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px; 
+}
+
+.product-title {
+  font-size: 1.2em; 
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 1em; 
+  margin-bottom: 12px; 
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.2em; 
+  font-weight: bold;
+  margin-bottom: 16px; 
+  color: #b12704;
+}
+
+.add-to-cart-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 12px 20px; 
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em; 
+}
+
+.add-to-cart-button:hover {
+  background-color: #e68a00;
+}
+
+.cart-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cart-item img {
+  width: 100px; 
+  height: auto;
+  margin-right: 20px; 
+}
+
+.cart-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 1em; 
+}
+
+.cart-item-details p {
+  margin: 4px 0;
+}
+
+.cart-item-details button {
+  align-self: flex-start;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 8px 16px; 
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.cart-item-details button:hover {
+  background-color: #e68a00;
+}
+
+.cart-summary {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 20px;
+  margin-top: 20px; 
+}
+
+.cart-summary p {
+  margin: 4px 0;
+  font-size: 1em;
+}
+
+.cart-summary p:nth-child(2) {
+  color: #b12704;
+}
